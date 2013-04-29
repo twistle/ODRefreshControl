@@ -177,7 +177,7 @@ static inline CGFloat lerp(CGFloat a, CGFloat b, CGFloat p)
         return;
     }
 
-    CGFloat offset = [[change objectForKey:@"new"] CGPointValue].y + self.originalContentInset.top;
+    CGFloat offset = [[change objectForKey:@"new"] CGPointValue].y + self.originalContentInset.top + 7;
     
     if (_refreshing) {
         if (offset != 0) {
